@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND Electrical Services - Company Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('/images/electric-3.jpg') center/cover no-repeat fixed;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Information Page Styles */
+        .information-page {
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .info-bg {
+            min-height: 100vh;
+            width: 100%;
+            background-color: rgba(20, 33, 61, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #fff;
+        }
+
+        .info-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .info-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 1rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #ea384c;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #0EA5E9;
+        }
+
+        .back-link i {
+            margin-right: 10px;
+        }
+
+        .info-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #0EA5E9;
+        }
+
+        .summary-section {
+            margin-bottom: 3rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-section h2 {
+            color: #ea384c;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .summary-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            border-color: rgba(14, 165, 233, 0.3);
+        }
+
+        .project-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-caption {
+            padding: 1.5rem;
+        }
+
+        .project-caption h3 {
+            color: #0EA5E9;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .project-caption p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        .certifications-section {
+            margin-bottom: 3rem;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .certifications-section h2 {
+            color: #ea384c;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cert-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .cert-logos img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cert-logos img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+        }
+
+        .contact-cta {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(234, 56, 76, 0.1) 100%);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-cta h2 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .contact-cta p {
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ea384c;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(234, 56, 76, 0.3);
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0EA5E9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+        }
+
+        .info-footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .info-header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            .cert-logos img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .info-container {
+                width: 95%;
+            }
+            
+            .info-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .summary-section,
+            .certifications-section,
+            .contact-cta {
+                padding: 1.5rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="information-page">
+        <div class="info-bg">
+            <div class="info-container">
+                <div class="info-header">
+                    <a href="/" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Home
+                    </a>
+                    <h1>ND Electrical Services</h1>
+                    <p class="subtitle">Company Profile Summary</p>
+                </div>
+
+                <div class="info-content">
+                    <div class="summary-section">
+                        <h2>About Us</h2>
+                        <p>
+                            ND Electrical is a leading electrical engineering company in South Africa, 
+                            providing professional services for domestic, commercial and industrial sectors. 
+                            Our expertise spans electrical installations, hazardous locations, gas installations, 
+                            security systems, and more.
+                        </p>
+                        <p>
+                            With certifications from the Electrical Contracting Board of South Africa (ECB) 
+                            and membership in the Electrical Contractors Association (ECA), we deliver 
+                            high-quality, safe, and compliant electrical solutions throughout Southern Africa.
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/images/electric-1.jpg" alt="Electrical Installations" />
+                            </div>
+                            <div class="project-caption">
+                                <h3>Industrial Electrical Installation</h3>
+                                <p>Complete electrical wiring and panel installation for manufacturing facility</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/images/installations1.jpg" alt="Hazardous Location Work" />
+                            </div>
+                            <div class="project-caption">
+                                <h3>Hazardous Location Compliance</h3>
+                                <p>Certified electrical work in classified hazardous environments</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/images/solar1.jpg" alt="Solar Installation" />
+                            </div>
+                            <div class="project-caption">
+                                <h3>Solar Energy Solutions</h3>
+                                <p>Renewable energy systems for sustainable power generation</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/images/hospital2.jpg" alt="Hospital Installation" />
+                            </div>
+                            <div class="project-caption">
+                                <h3>Healthcare Facility Wiring</h3>
+                                <p>Specialized electrical systems for medical environments</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications-section">
+                        <h2>Our Certifications</h2>
+                        <div class="cert-logos">
+                            <img src="/assets/images/ecsa.jpg" alt="ECSA Certification" />
+                            <img src="/assets/images/ND GAS INS.jpg" alt="ND Gas Installation" />
+                            <img src="/assets/images/flameproof.jpg" alt="Flameproof Certification" />
+                            <img src="/assets/images/saiee.jpg" alt="SAIEE Certification" />
+                            <img src="/assets/images/image.png" alt="ND Electrical Certification" />
+                            <img src="/assets/images/testingcomsn.jpg" alt="Testing Commission Certification" />
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h2>Ready to Transform Your Electrical Systems?</h2>
+                        <p>Contact our team of certified experts for a consultation on your project.</p>
+                        <a href="/contactus.html" class="cta-button">Get in Touch</a>
+                    </div>
+                </div>
+
+                <div class="info-footer">
+                    <p>&copy; 2023 ND Electrical Services. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Services</title>
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KPNPVED8JV');
+</script>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img class="h-12 w-auto" src="images/logo1.jpg" alt="ND Electrical">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-[#9b87f5]">Home</a>
+                    <a href="/services" class="text-gray-700 hover:text-[#9b87f5]">Services</a>
+                    <a href="/contact" class="text-gray-700 hover:text-[#9b87f5]">Contact</a>
+                    <a href="/login" class="text-[#9b87f5] hover:text-[#7E69AB] font-medium">Login</a>
+                    <a href="/signup" class="bg-[#9b87f5] text-white px-4 py-2 rounded-md hover:bg-[#7E69AB] transition-colors">
+                        Sign Up
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-gray-700 hover:text-[#9b87f5] focus:outline-none">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="block px-3 py-2 text-gray-700 hover:text-[#9b87f5]">Home</a>
+                <a href="/services" class="block px-3 py-2 text-gray-700 hover:text-[#9b87f5]">Services</a>
+                <a href="/contact" class="block px-3 py-2 text-gray-700 hover:text-[#9b87f5]">Contact</a>
+                <a href="/login" class="block px-3 py-2 text-[#9b87f5] hover:text-[#7E69AB]">Login</a>
+                <a href="/signup" class="block px-3 py-2 bg-[#9b87f5] text-white rounded-md hover:bg-[#7E69AB]">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-[#1A1F2C] mb-4">Our Services</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Professional electrical services for residential and commercial clients, delivered with expertise and care.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+            <!-- Services will be populated by JavaScript -->
+        </div>
+
+        <div class="mt-16 text-center">
+            <p class="text-lg text-gray-600 mb-8">
+                Need a service not listed here? Contact us for custom solutions.
+            </p>
+            <a href="contactus.html" class="bg-[#9b87f5] hover:bg-[#7E69AB] text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Services data
+        const services = [
+            {
+                icon: 'bolt',
+                title: 'Electrical Repairs',
+                description: 'Expert electrical repair services for your home or business, available 24/7 for emergencies.'
+            },
+            {
+                icon: 'home',
+                title: 'Home Installations',
+                description: 'Complete electrical installations for new homes and renovation projects.'
+            },
+            {
+                icon: 'power',
+                title: 'Power Solutions',
+                description: 'Backup power systems and electrical panel upgrades to keep you running.'
+            },
+            {
+                icon: 'wrench',
+                title: 'Maintenance',
+                description: 'Regular maintenance and safety inspections to prevent electrical issues.'
+            },
+            {
+                icon: 'shield',
+                title: 'Safety Inspections',
+                description: 'Comprehensive electrical safety audits and compliance checks.'
+            }
+        ];
+
+        // Populate services
+        const servicesGrid = document.getElementById('servicesGrid');
+        services.forEach(service => {
+            const serviceCard = document.createElement('div');
+            serviceCard.className = 'border rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 p-6';
+            serviceCard.innerHTML = `
+                <div class="flex items-center justify-center mb-4">
+                    <i data-lucide="${service.icon}" class="w-10 h-10 text-[#9b87f5]"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-center text-[#1A1F2C] mb-2">${service.title}</h3>
+                <p class="text-center text-gray-600">${service.description}</p>
+            `;
+            servicesGrid.appendChild(serviceCard);
+        });
+
+        // Reinitialize icons after adding them dynamically
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "website-chat",
+			"path": "../../website-chat"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "website-chat"
+	}
+}

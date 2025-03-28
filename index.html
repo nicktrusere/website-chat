@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KPNPVED8JV');
+</script>
+    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="/styles/chatbot.css">
+</head>
+<body>
+    <header class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="/assets/images/logo1.jpg" alt="ND Electrical Logo">
+        </div>
+
+        <!-- Menu links in the center -->
+        <nav class="menu" id="menu">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#slider" id="home-link">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="#electrical">Electrical Engineering Services</a></li>
+                        <li><a href="#training">Training and Certification</a></li>
+                        <li><a href="#hazardous">Hazardous Locations</a></li>
+                        <li><a href="#lightning">Lightning Safety</a></li>
+                        <li><a href="#gas">Gas Installations</a></li>
+                    </ul>
+                </li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="contactus.html">Contact Us, Call 0725531168/0848704708</a></li>
+            </ul>
+        </nav>
+
+        <!-- Icons on the right -->
+        <div class="icons-container">
+            <div class="icons">
+              <div pageid="info-btn" class="fas fa-info-circle" onclick="window.location.href='infor.html'"></div> <!-- Info icon -->
+                <div id="search-btn" class="fas fa-search"></div> <!-- Search icon -->
+                <div id="login-btn" class="fas fa-user"></div> <!-- Login icon -->
+            </div>
+        </div>
+    
+
+    <!-- Search input (hidden by default) -->
+    <div id="search-container" class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-submit">Search</button>
+    </div>
+  </header>
+
+      <section id="home">
+        <div class="slider-container">
+            <div id="slider" class="slider">
+                <div class="slides">
+                    <div class="slide-content"></div>
+                    <div class="slide" style="background-image: url('/assets/images/solar1.jpg');"></div>
+                    <div class="slide" style="background-image: url('/assets/images/gas-cylinder.jpg');"></div>
+                    <div class="slide" style="background-image: url('/assets/images/pipelines1.jpg');"></div>
+                    <div class="slide" style="background-image: url('/assets/images/electric-1.jpg');"></div>
+                    <div class="slide" style="background-image: url('/assets/images/fence1.jpg');"></div>
+                </div>
+                <div class="overlay-content">
+                    <div class="overlay-text">
+                        <h1>ND Electrical Services and Contractors South Africa.</h1>
+                        <p>Electrical Installations! & Hazardous Locations </p>
+                        <p>Gas Installations! & Electric Fencing Lightining Safety</p>
+                        <p>Solar Installations! Farm Installations </p>
+                    </div>
+                            
+                    <div class="circle-container">
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/logo1.jpg" alt="Logo 1">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/logo2.jpg" alt="Logo 2">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/hazardous.jpg" alt="Logo 3">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/annahand.jpg" alt="Logo 4">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/solarsystms.jpg" alt="Logo 5">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="assets/images/securitysystm.jpg" alt="Logo 6">
+                        </a>
+                        <a href="#" class="circle-image">
+                            <img src="/assets/images/ND GAS INS.jpg" alt="Logo 7">
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="about">
+        
+                <div class="about-content">
+                    <h2 class="heading">Coming to Cape Town!! Opening Soon .. Available ALL Provinces!</h2>
+        
+                    <p>Our Diverse and Specialised Electrical Installations experience and Affordable</p>
+                    <p>Your Trusted Partner in <strong>Electrical Solutions</strong> 
+                        For <strong>Installations & Maintenance</strong>, we are your go-to Experts. From <strong>Advanced Lightning Safety Systems </strong>
+                        to <strong>Secure Gas Installations,</strong> our <strong>Highly Skilled Team </strong> that meets the Highest Safety Standards. We specialize in <strong>Hazardous Locations</strong> 
+                        , <strong>Farm Electrical Installations, </strong>with precision and care. ND Electrical has a <strong>Track Record, Competitive Pricing, and a Commitment to Excellence,</strong> We Deliver Solutions that Power your Success.</p>
+                    <p>Cerified by top Electrical Assocciations</p>
+        
+                    <a href="contactus.html" class="btn">Call Us: 0725531168</a>
+                </div>
+            </section>
+        </section>
+       <!-- Industrial Section with 2x4 Grid (8 Cards) -->
+    <section class="industrial-section">
+      <div class="card-grid">
+          <!-- Row 1 -->
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/hospital2.jpg" alt="Electrical Contracting">
+              </div>
+              <div class="card-info">
+                  <h3>Electrical Contracting</h3>
+                  <p>Installations & Maintenance<br>Certificates of Compliance</p>
+              </div>
+          </div>
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/installations0.jpg" alt="Gas Installations">
+              </div>
+              <div class="card-info">
+                  <h3>Gas Installations</h3>
+                  <p>Restaurants Gas Systems<br>Domestic Gas Installations</p>
+              </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/installations0.jpg" alt="Hazardous Locations">
+              </div>
+              <div class="card-info">
+                  <h3>Hazardous Locations</h3>
+                  <p>Safety Compliance<br>Expert Installations</p>
+              </div>
+          </div>
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/ndtransport.jpg" alt="Solar Installations">
+              </div>
+              <div class="card-info">
+                  <h3>Solar Installations</h3>
+                  <p>Energy Efficiency<br>Prepaid Meters & Sub-Metering</p>
+              </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/hospital3.jpg" alt="Hospital Installations">
+              </div>
+              <div class="card-info">
+                  <h3>Hospital Installations</h3>
+                  <p>Health Electrical Systems<br>Medical Compliance</p>
+              </div>
+          </div>
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/hospital2.jpg" alt="Gas Installations">
+              </div>
+              <div class="card-info">
+                  <h3>Gas Installations</h3>
+                  <p>Domestic to Industrial<br>Certified Services</p>
+              </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/image.png" alt="Electrical Contracting">
+              </div>
+              <div class="card-info">
+                  <h3>Electrical Contracting</h3>
+                  <p>Installations & Maintenance<br>Certificates of Compliance</p>
+              </div>
+          </div>
+          <div class="service-card">
+              <div class="image-wrapper">
+                  <img src="/assets/images/testingcomsn.jpg" alt="Training Centre">
+              </div>
+              <div class="card-info">
+                  <h3>Training Centre</h3>
+                  <p>Certifications<br>Trade Test Prep</p>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
+</html>
+        <section id="services">
+            <p>Explore our services.</p>
+            <section>
+                <div class="image-gallery">
+                    <div class="image-container">
+                      <img src="/assets/images/ND GAS INS.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                      <img src="/assets/images/logo1.jpg" alt="ND Electrical Logo 2">
+                    </div>
+                    <div class="image-container">
+                      <img src="/assets/images/logo2.jpg" alt="SAIEE Logo">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/securitysystm.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/solarsystms.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/hazardous.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                </div>
+                  
+            </section>
+            <section id="home">
+                <div class="horizontal-scroll-container">
+                  <div class="scroll-wrapper">
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electric Fencing & Security Camera Solutions"</h3>
+                        <p class="scroll-description">
+                          Installation and maintenance of CCTV,access control,and alarm systems. Our solutions enhance security with reliable perimeter protection and high-quality surveillance, ensuring safety and peace of mind. 
+                          Trust us for cutting-edge technology, professional service, and a commitment to safeguarding your property.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical: Engineering
+            Services"</h3>
+                        <p class="scroll-description">
+                          ND Electrical Comprehensive electrical engineering solutions, including design, implementation, and consulting, exclusive values
+                          such as customer focus, quality service, and timely delivery. We apply
+                          new technology innovatively to enable business growth and efficiency.
+                          Our objective is to maintain a core of loyal and profitable customers. Installation, maintenance, and repair of electrical systems
+                          for residential, commercial, and industrial projects.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical Hazardous
+            Location Electrical Solutions"</h3>
+                        <p class="scroll-description">
+                          ND Electrical Specialised electrical installations in
+                          Hazardous and high-risk environments. and
+                          Lightning Safety. We address unreliable and uncertified
+            installations,
+                          improve electrical infrastructure, and reduce fault experiences.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div><div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical  Farms & Hospitals Installations"</h3>
+                        <p class="scroll-description">
+                          ND Electrical – delivering state-of-the-art electrical installations tailored to the unique demands of both agricultural and healthcare environments.
+                          For farms, our innovative, energy-efficient systems ensure robust power distribution and automation. In Hospitals, we implement precision-engineered, safe, and 
+                          reliable electrical solutions that support critical care and enhance operational efficiency. 
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical Solar Energy Systems"</h3>
+                        <p class="scroll-description">
+                          ND Electrical Design, installation, and maintenance of solar power
+                          solutions for sustainable energy. We address unreliable
+                          and uncertified installations,
+                          improve electrical infrastructure, and reduce fault experiences.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical Gas Installations"</h3>
+                        <p class="scroll-description">
+                          ND Electrical Efficient Gas Systems tailored to your needs. From Installations to maintenance, we prioritize safety, 
+                          reliability, and energy efficiency, delivering high-quality solutions you can trust.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical - Prepaid Meters & Sub-Metering "</h3>
+                        <p class="scroll-description">
+                            ND Electrical - cutting-edge prepaid meter and sub-metering solutions, expertly installed and maintained for
+                             residential, commercial, and industrial properties. Experience precise energy tracking, robust cost control, 
+                             and seamless billing management, all designed to provide clear, transparent insights that empower property 
+                             owners and tenants to optimize their energy use and maximize savings. 
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+                    <div class="scroll-item">
+                      <div class="scroll-content">
+                        <h3 class="scroll-subtitle">"ND Electrical General Electrical Services"</h3>
+                        <p class="scroll-description">
+                          ND Electrical FroWiring, lighting, power distribution,and emergency
+                          electrical repairs. Empower your
+                          world with sustainable, secure, and intelligent energy solutions.
+                          Your trusted partner in technology and safety.
+                        </p>
+                        <a href="index2.html" class="scroll-btn"><span>Learn More</span></a>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+              </section>    
+               
+        <section id="training">
+        <section id="services">
+                <section class="plans" id="plans">
+                    <div class="plans-content">
+                        <div class="box">
+                            <h3>ND Electrical</h3>
+                            <h2><span>Installations</span></h2>
+                            <p>
+                              ND Electrical is Registered with Electrical
+                              Contracting Board of South Africa [E.C.B] as a
+                                                  Contractor and A member of Electrical Contractors
+                              Association of South Africa
+                                                  [E.C.A], South Africa Flameproof Association
+                              [SAFA] South African Electric Fence
+                                                  Installers Association [SAEFIA] supports our operations in
+                                                  terms of Contractual Agreements, Training and
+                              Professional advice. We offer Superior
+                                                  Electrical Services, from the set Standards of
+                              SANS1042 [SAB0142]/
+                                                  SANS 10089.
+            
+                            </p>
+                            <a href="contactus.html">
+                            Contact-Us
+                            <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h3>Gas Systems</h3>
+                            <h2><span>Gas Installations</span></h2>
+                            <p>
+                                <p>
+                                  We provide professional gas installation services for residential, commercial, and industrial 
+                        applications. Our expertise ensures safe, compliant, and efficient gas systems tailored to your needs.
+                         From installations to maintenance, we prioritize safety, reliability, and energy efficiency, delivering high-quality solutions you can trust. 
+
+                            </p>
+            
+                            </p>
+                            <a href="contactus.html">
+                            Contact-Us
+                            <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h3>Hazardous Locations</h3>
+                            <h2><span> Hazardous Installations</span></h2>
+                            <p>
+                              ND Electrical specializes in safe and compliant hazardous installations, backed by our registration with the Electrical
+                               Contracting Board of South Africa (E.C.B.) and membership in the South Africa Flameproof Association (SAFA). Our team 
+                               is expertly trained to handle high-risk environments, ensuring adherence to strict safety standards and regulations. Trust ND Electrical for reliable, professional, we prioritize safety and quality.
+                            </p>
+                            <a href="contactus.html">
+                            Contact-Us
+                            <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h3> Electric Security</h3>
+                            <h2><span>Fence+Camera Installations</span></h2>
+                            <p>
+                              We specialize in the installation and maintenance of Electric Fences and Security Camera Systems for residential, 
+                              commercial, and industrial properties. Our solutions enhance security with reliable perimeter protection and high-quality
+                               surveillance, ensuring safety and peace of mind. Trust us for cutting-edge technology, professional service, and a commitment to safeguarding your property.
+            
+                            </p>
+                            <a href="contactus.html">
+                            Contact-Us
+                            <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="box">
+                          <h3>Prepaid Meters </h3>
+                          <h2><span>Sub-Meters Installations </span></h2>
+                          <p>
+                            We specialize in the installation and maintenance of prepaid meters and sub-metering systems 
+                            for residential, commercial, and industrial properties. Our solutions provide accurate energy 
+                            consumption tracking, cost control, and efficient billing management. With our reliable and user-friendly systems, property owners and tenants can easily monitor and manage electricity usage, ensuring transparency and cost efficiency.
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <h3>Solar Systems</h3>
+                          <h2><span>Solar Installations</span></h2>
+                          <p>
+                            ND Electrical is fully committed to Professional Design, installation, and maintenance of solar power 
+                            solutions for sustainable energy. We address unreliable and uncertified installations, 
+                            improve electrical infrastructure, and reduce fault experiences.
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i id="contact-btn" class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <h3>Hospitals and Healthcare</h3>
+                          <h2><span>Hospital Installations</span></h2>
+                          <p>
+                            ND Electrical  In Hospitals, we implement precision-engineered, safe, and reliable electrical solutions that
+                             support critical care and enhance operational efficiency.
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i id="contact-btn" class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <h3>Farm Services</h3>
+                          <h2><span>Farms Installations</span></h2>
+                          <p>
+                            ND Electrical – delivering state-of-the-art electrical installations tailored to the unique
+                             demands of both agricultural and healthcare environments. For farms, our innovative, 
+                             energy-efficient systems ensure robust power distribution and automation
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i id="contact-btn" class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <h3>Lightining Safety</h3>
+                          <h2><span>Lightining Protection</span></h2>
+                          <p>
+                            ND Electrical Lightning Protection Systems: We design and install lightning rods and conductors to safely direct
+                             lightning strikes away from your buildings, minimizing damage. Grounding Systems: Is essential for 
+                             dissipating electrical surges safely into the earth and ensure optimal performance.
+                             Risk Assessment and Consultation: We conduct evaluations of properties to identify vulnerabilities and recommend tailored solutions to enhance lightning safety.
+                             Surge Protection: Our surge protection solutions safeguard your electrical and electronic equipment from voltage spikes caused by lightning.
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i id="contact-btn" class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                        <div class="box">
+                          <h3>Electrical Training</h3>
+                          <h2><span>Compliance</span></h2>
+                          <p>
+                            ND Electrical is fully computerized to provide
+            real-time information on job progress,
+                            accounting systems, management data, email
+            communication, and improved customer
+                            service through social media. The company is committed
+            to adopting and innovating new
+                            technologies to foster business growth and enhance
+            operational efficiency.
+                          </p>
+                          <a href="contactus.html">
+                          Contact-Us
+                          <i id="contact-btn" class='bx bx-right-arrow-alt'></i>
+                          </a>
+                        </div>
+                </section>
+        </section>
+        <section class="info-section">
+            <div class="info-container">
+              <!-- Card 1: Hazloc Classification -->
+        
+              <!-- Card 2: Mission Statement -->
+              <div class="card">
+                <h3>Mission Statement</h3>
+                <p>We offer exceptional customer service through:</p>
+                <ul>
+                  <li>Providing affordable, safe, and reliable electrical services.</li>
+                  <li>Providing prompt and efficient customer service.</li>
+                </ul>
+              </div>
+        
+              <!-- Card 3: Vision -->
+              <div class="card">
+                <h3>Vision</h3>
+                <p>To be the best and biggest electrical company, with
+        international standards aiming to develop the social lives in Southern
+        Africa.</p>
+              </div>
+        
+              <!-- Card 4: Goals -->
+              <div class="card">
+                <h3>Goals</h3>
+                <ul>
+                  <li>Make service available & accessible to everyone.</li>
+                  <li>Move in line with technological development.</li>
+                </ul>
+              </div>
+        
+              <!-- Card 5: Values -->
+              <div class="card">
+                <h3>Values</h3>
+                <ul>
+                  <li>Exceed customer expectations.</li>
+                  <li>Loyalty, Respect, and Honesty.</li>
+                  <li>Ethical business conduct.</li>
+                  <li>Build a team of non-racial & non-sexist workforce.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        <section id="contact">
+            
+                <div class="image-gallery">
+                    <div class="image-container">
+                      <img src="/assets/images/logo1.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                      <img src="/assets/images/ecsa.jpg" alt="ND Electrical Logo 2">
+                    </div>
+                    <div class="image-container">
+                      <img src="/assets/images/securitysystm.jpg" alt="SAIEE Logo">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/logo2.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/solarsystms.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                    <div class="image-container">
+                        <img src="/assets/images/hazardous.jpg" alt="ND Electrical Logo 1">
+                    </div>
+                </div>
+    </section>
+    </section>
+    <footer>
+      <div class="footer-container">
+          <!-- Left Section: Logo and Contact Details -->
+          <div class="footer-left">
+            <img src="/assets/images/logo1.jpg" alt="Company Logo" class="logo">
+            <p>Head office Pretoria,
+              729 Bates Road, Moreleta Park, Pretoria </p>
+            <p><strong>Email:</strong> info@ndelectrical.co.za</p>
+            <p><strong>Phone:</strong> 0725531168/0848704708/0865433527</p>
+            <p>Available in All Provinces</p>
+        </div>
+
+  
+          <!-- Middle Section: Navigation Links -->
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="infor.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+  
+          <!-- Right Section: Social Media Links -->
+          <div class="footer-right">
+              <a href="https://facebook.com" class="social-icon" id="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com" class="social-icon" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://instagram.com" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot-container">
+    <button id="chatbot-toggle">💬 Chat</button>
+    <div id="chatbot-window" class="hidden">
+        <div id="chatbot-header">
+            <img src="/assets/images/logo1.jpg" alt="ND Electrical Logo" id="chatbot-logo">
+            <h3>ND Electrical Chatbot</h3>
+            <button id="clear-chat">Clear Chat</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+</div>
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      console.log("Footer loaded successfully!");
+  });
+      
+        // JavaScript for search icon
+        const searchBtn = document.getElementById('search-btn');
+        const searchContainer = document.getElementById('search-container');
+        const searchInput = document.getElementById('search-input');
+        const searchSubmit = document.getElementById('search-submit');
+
+        searchBtn.addEventListener('click', () => {
+            searchContainer.style.display = 'block'; // Show search input
+            searchInput.focus(); // Focus on the search input
+        });
+
+        searchSubmit.addEventListener('click', () => {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            if (searchTerm) {
+                highlightAndScrollToText(searchTerm); // Highlight and scroll to matching text
+            }
+        });
+
+        function highlightAndScrollToText(searchTerm) {
+            const bodyText = document.body.innerHTML;
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            const highlightedText = bodyText.replace(regex, '<span class="highlight">$1</span>');
+            document.body.innerHTML = highlightedText;
+
+            const firstMatch = document.querySelector('.highlight');
+            if (firstMatch) {
+                firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the first match
+            }
+        }
+
+        // JavaScript for login icon
+        const loginBtn = document.getElementById('login-btn');
+        loginBtn.addEventListener('click', () => {
+            window.location.href = 'contactus.html'; // Redirect to login.html
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        // Select all buttons with the class "scroll-btn"
+        const learnMoreButtons = document.querySelectorAll('.scroll-btn');
+    
+        // Loop through each button and add a click event listener
+        learnMoreButtons.forEach(function(button) {
+          button.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent default anchor behavior
+          window.location.href = 'index2.html'; // Redirect to more.html
+        });
+      });
+  });
+        
+    </script>
+    <link rel="stylesheet" href="scripts/chatbot.js">
+</body>
+</html>

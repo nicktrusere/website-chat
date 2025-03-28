@@ -1,0 +1,404 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #home {
+    padding: 20px;
+    background-color: #f06969;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 80px;
+    background-color: rgb(125, 125, 159);
+}
+
+.slider-container {
+position: relative;
+overflow: hidden;
+background-color: #f0f0f0; /* or use a background image */
+}
+.overlay-text {
+position: absolute;
+top: 3%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: rgb(3, 56, 105);
+z-index: 10;
+}
+
+.overlay-content {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+z-index: 10;
+width: 100%;
+}
+
+.overlay-text {
+margin-bottom: 50px;
+}
+
+.overlay-text p {
+font-size: 3.5rem;
+margin-bottom: 50px;
+}
+
+.circle-container {
+display: flex;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
+max-width: 140%;
+margin: 0 auto;
+}
+
+.circle-image {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+overflow: hidden;
+transition: all 0.3s ease;
+position: relative;
+display: block;
+border: 3px solid transparent;
+background: white;
+}
+
+.circle-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Hover Effects */
+.circle-image:hover {
+transform: scale(1.3) translateY(-8px);
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+border-color: #ffffff;
+z-index: 2;
+}
+
+.circle-image:hover::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border-radius: 50%;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+0% { opacity: 0.8; }
+50% { opacity: 1; }
+100% { opacity: 0.8; }
+}
+
+/* Optional: Add different hover colors */
+.circle-image:nth-child(odd):hover {
+border-color: #ff6b6b;
+box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
+}
+
+.circle-image:nth-child(even):hover {
+border-color: #11cdc1;
+box-shadow: 0 0 15px rgba(78, 205, 196, 0.8);
+}
+
+
+  .horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of items */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #0cbd67 #f1f1f1; /* For Firefox */
+  }
+  .horizontal-scroll-container::-webkit-scrollbar {
+    height: 8px; /* For Chrome, Safari, and Opera */
+  }
+
+  .horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+  .horizontal-scroll-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+  }
+
+  .scroll-wrapper {
+    display: inline-flex; /* Display items in a row */
+    gap: 20px; /* Space between items */
+    padding: 10px 0; /* Add some padding */
+  }
+
+  .scroll-item {
+    display: inline-block; /* Ensure items stay in a row */
+    width: 300px; /* Fixed width for each item */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    white-space: normal; /* Allow text to wrap inside items */
+  }
+
+  .scroll-content {
+    text-align: center;
+  }
+
+  .scroll-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .scroll-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .scroll-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .scroll-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  .plans {
+    background: rgb(1, 8, 108);
+    }
+
+    .plans-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+    color: #1925d6;
+    }
+
+    .box {
+    padding: 30px 30px 50px 30px;
+    height: 40rem;
+    background:#05f82d;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    }
+
+    .box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    }
+
+    .box h2 {
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    }
+
+    .box ul li {
+    list-style: disc;
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+    }
+
+    .box a {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1.2en;
+    font-weight: 700;
+    padding: 7px 0;
+    color: var(--text-color);
+    border-bottom: 2px solid #5d6c83;
+    transition: all 0.5s ease;
+    }
+
+    .box i {
+    font-size: 25px;
+    color: var(--main-color);
+    margin-left: 5px;
+    }
+
+    .box a:hover {
+    border-bottom: 2px solid var(--main-color);
+    }
+    .box:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.01);
+    }
+
+    /* Section Styling */
+.info-section {
+    background: #f7f9fc; /* Light gray background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Container Styling */
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*
+Responsive grid */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Card Styling */
+  .card {
+    background: #ffffff; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: left; /* Left-align content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Card Hover Effect */
+  .card:hover {
+    transform: translateY(-5px); /* Subtle lift */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+
+  /* Card Headings */
+  .card h3 {
+    font-size: 18px;
+    color: #002244; /* Navy blue */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* Card Text */
+  .card p, .card ul {
+    font-size: 14px;
+    color: #555555; /* Subtle gray text */
+    line-height: 1.6;
+  }
+
+  /* List Styling */
+  .card ul {
+    padding-left: 20px; /* Indent list */
+    list-style-type: disc; /* Bullet points */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .info-container {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #021967;
+    color: #e90b0b;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .footer-left h3 {
+    margin: 0 0 10px;
+  }
+  .footer-left p {
+    margin: 5px 0;
+  }
+  .footer-left a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .footer-right .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    display: flex;
+  }
+  .footer-right .footer-nav li {
+    margin-right: 15px;
+  }
+  .footer-right .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-right .footer-nav a:hover {
+    color: #aaa;
+  }
+  .social-media a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .social-media a:hover {
+    color: #aaa;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--snd-bg-color);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: red;
+    border: black;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: translateY(-10px) scale(1.2);
+    background: blue;
+    color: #131313;
+    box-shadow: 0 0 25px blue;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(2, 2, 11);
+}
