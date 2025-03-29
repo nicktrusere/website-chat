@@ -1,0 +1,5 @@
+[submodule "droneeditor"]
+    path = droneeditor
+    url = <C:\Users\Rusere\Desktop\website-chat\droneeditor>
+
+node_modules/
