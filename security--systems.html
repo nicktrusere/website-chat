@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Systems Solutions</title>
+    <style>
+        /* Security Section Styles */
+        .security-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .security-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #2ecc71;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .security-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(46,204,113,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .security-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .security-image-container {
+            position: relative;
+            height: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .security-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .security-card:hover .security-image {
+            transform: scale(1.05);
+        }
+
+        .security-card h3 {
+            color: #2ecc71;
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+        }
+
+        .security-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .security-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.9);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .security-list li:before {
+            content: "🛡️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Security Gallery */
+        .security-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .gallery-security-container {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 1.78/1;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-security-container:hover {
+            transform: scale(1.03);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .security-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .security-heading {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .security-gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .security-image-container {
+                height: 250px;
+            }
+            
+            .security-heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .security-card {
+                padding: 20px;
+            }
+            
+            .security-image-container {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="security-section">
+        <h1 class="security-heading">Comprehensive Security Solutions</h1>
+
+        <div class="security-grid">
+            <!-- Farm Security -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/farm-security.jpg" alt="Farm Security" class="security-image">
+                </div>
+                <h3>Agricultural Security</h3>
+                <ul class="security-list">
+                    <li>Perimeter Detection Systems</li>
+                    <li>Livestock Monitoring</li>
+                    <li>Remote Area Security</li>
+                    <li>Solar-powered Solutions</li>
+                </ul>
+            </div>
+
+            <!-- Electric Fence -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/electric-fence.jpg" alt="Electric Fence" class="security-image">
+                </div>
+                <h3>Barrier Systems</h3>
+                <ul class="security-list">
+                    <li>Fence Voltage Testing</li>
+                    <li>Warning System Integration</li>
+                    <li>Lightning Protection</li>
+                    <li>Wildlife Deterrent Systems</li>
+                </ul>
+            </div>
+
+            <!-- Access Control -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/access-control.jpg" alt="Access Control" class="security-image">
+                </div>
+                <h3>Access Management</h3>
+                <ul class="security-list">
+                    <li>Biometric Systems</li>
+                    <li>RFID Card Readers</li>
+                    <li>Vehicle Access Control</li>
+                    <li>Mobile Integration</li>
+                </ul>
+            </div>
+
+            <!-- Perimeter Security -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/perimeter-security.jpg" alt="Perimeter Security" class="security-image">
+                </div>
+                <h3>Boundary Protection</h3>
+                <ul class="security-list">
+                    <li>Laser Detection Systems</li>
+                    <li>Thermal Imaging</li>
+                    <li>Underground Sensors</li>
+                    <li>Drone Surveillance</li>
+                </ul>
+            </div>
+
+            <!-- CCTV -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/cctv-system.jpg" alt="CCTV System" class="security-image">
+                </div>
+                <h3>Surveillance Systems</h3>
+                <ul class="security-list">
+                    <li>4K Camera Installation</li>
+                    <li>Night Vision Technology</li>
+                    <li>Cloud Storage Solutions</li>
+                    <li>AI Motion Detection</li>
+                </ul>
+            </div>
+
+            <!-- Burglar Alarms -->
+            <div class="security-card">
+                <div class="security-image-container">
+                    <img src="/assets/images/burglar-alarm.jpg" alt="Alarm System" class="security-image">
+                </div>
+                <h3>Intrusion Systems</h3>
+                <ul class="security-list">
+                    <li>Smart Sensor Networks</li>
+                    <li>24/7 Monitoring</li>
+                    <li>Automated Alert Systems</li>
+                    <li>Police Response Integration</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Security Gallery -->
+        <div class="security-gallery">
+            <div class="gallery-security-container">
+                <img src="/assets/images/security-install1.jpg" alt="Control Room" class="security-image">
+            </div>
+            <div class="gallery-security-container">
+                <img src="/assets/images/security-install2.jpg" alt="Camera Setup" class="security-image">
+            </div>
+            <div class="gallery-security-container">
+                <img src="/assets/images/security-install3.jpg" alt="Access Panel" class="security-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazardous Locations Services</title>
+    <style>
+        /* Add these new styles for image gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-image-container:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        /* Existing hazardous section styles */
+        .hazardous-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .hazardous-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hazardous-subheading {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 50px;
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hazardous-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .hazardous-card {
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,107,107,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* ... (keep other existing styles the same) ... */
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 800px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .hazardous-heading {
+                font-size: 2.2rem;
+            }
+            
+            .hazardous-subheading {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hazardous-heading {
+                font-size: 1.8rem;
+            }
+            
+            .hazardous-subheading {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hazardous-section">
+        <h1 class="hazardous-heading">Hazardous Locations Expertise</h1>
+        
+        <p class="hazardous-subheading">
+            Specialized electrical solutions for high-risk environments including gases, dust & petroleum installations. 
+            Comprehensive safety compliance and certification services.
+        </p>
+
+        <div class="warning-ribbon">
+            ⚠️ Certified HAZLOC Services | ATEX/IECEx Compliance | Zone 0/1/2 & Division 1/2 Classification
+        </div>
+
+        <div class="hazardous-grid">
+            <!-- ... (keep your hazardous cards the same) ... -->
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-image-container">
+                <img src="/assets/images/hazloc1.jpg" alt="Explosion Proof Installation" class="gallery-image">
+            </div>
+            <div class="gallery-image-container">
+                <img src="/assets/images/hazloc-inspection.jpg" alt="Safety Inspection" class="gallery-image">
+            </div>
+            <div class="gallery-image-container">
+                <img src="/assets/images/gas-detection.jpg" alt="Gas Detection System" class="gallery-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Your Existing Industrial Section -->
+    <section class="industrial">
+        <!-- Your existing card grid here -->
+    </section>
+</body>
+</html>

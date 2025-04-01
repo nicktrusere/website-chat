@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar & Renewable Energy Solutions</title>
+    <style>
+        /* Solar Section Styles */
+        .solar-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .solar-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #f9a825;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .solar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .solar-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(249,168,37,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .solar-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .solar-image-container {
+            position: relative;
+            height: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .solar-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .solar-card:hover .solar-image {
+            transform: scale(1.05);
+        }
+
+        .solar-card h3 {
+            color: #f9a825;
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+        }
+
+        .solar-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .solar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.9);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .solar-list li:before {
+            content: "☀️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Solar Gallery */
+        .solar-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .gallery-solar-container {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 1.78/1;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-solar-container:hover {
+            transform: scale(1.03);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .solar-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .solar-heading {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .solar-gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .solar-image-container {
+                height: 250px;
+            }
+            
+            .solar-heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .solar-card {
+                padding: 20px;
+            }
+            
+            .solar-image-container {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="solar-section">
+        <h1 class="solar-heading">Renewable Energy Solutions</h1>
+
+        <div class="solar-grid">
+            <!-- Residential Solar -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/residential-solar.jpg" alt="Home Solar" class="solar-image">
+                </div>
+                <h3>Residential Solar Systems</h3>
+                <ul class="solar-list">
+                    <li>Roof-mounted Solutions</li>
+                    <li>Energy Independence Planning</li>
+                    <li>Net Metering Installations</li>
+                    <li>Battery Backup Systems</li>
+                </ul>
+            </div>
+
+            <!-- Commercial Solar -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/commercial-solar.jpg" alt="Commercial Solar" class="solar-image">
+                </div>
+                <h3>Commercial Energy Solutions</h3>
+                <ul class="solar-list">
+                    <li>Large-scale PV Arrays</li>
+                    <li>Energy Monitoring Systems</li>
+                    <li>Peak Shaving Solutions</li>
+                    <li>Industrial Storage Systems</li>
+                </ul>
+            </div>
+
+            <!-- Energy Storage -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/battery-storage.jpg" alt="Battery Storage" class="solar-image">
+                </div>
+                <h3>Energy Storage Systems</h3>
+                <ul class="solar-list">
+                    <li>Lithium-ion Battery Banks</li>
+                    <li>Off-grid Solutions</li>
+                    <li>Load Shifting Configurations</li>
+                    <li>UPS Integration</li>
+                </ul>
+            </div>
+
+            <!-- Wind Power -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/wind-turbine.jpg" alt="Wind Power" class="solar-image">
+                </div>
+                <h3>Wind Energy Integration</h3>
+                <ul class="solar-list">
+                    <li>Hybrid Solar-Wind Systems</li>
+                    <li>Turbine Installation</li>
+                    <li>Grid Synchronization</li>
+                    <li>Energy Storage Pairing</li>
+                </ul>
+            </div>
+
+            <!-- Grid-Tie -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/grid-tie.jpg" alt="Grid Connection" class="solar-image">
+                </div>
+                <h3>Grid-Tied Solutions</h3>
+                <ul class="solar-list">
+                    <li>Net Metering Systems</li>
+                    <li>Utility Interconnection</li>
+                    <li>Feed-in Tariff Compliance</li>
+                    <li>Smart Inverter Technology</li>
+                </ul>
+            </div>
+
+            <!-- Lightning Protection -->
+            <div class="solar-card">
+                <div class="solar-image-container">
+                    <img src="/assets/images/solar-protection.jpg" alt="Lightning Protection" class="solar-image">
+                </div>
+                <h3>System Protection</h3>
+                <ul class="solar-list">
+                    <li>Surge Protection Devices</li>
+                    <li>Lightning Arrestors</li>
+                    <li>Grounding Systems</li>
+                    <li>IEC 62305 Compliance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Solar Gallery -->
+        <div class="solar-gallery">
+            <div class="gallery-solar-container">
+                <img src="/assets/images/solar-install1.jpg" alt="Solar Farm" class="solar-image">
+            </div>
+            <div class="gallery-solar-container">
+                <img src="/assets/images/solar-install2.jpg" alt="Monitoring" class="solar-image">
+            </div>
+            <div class="gallery-solar-container">
+                <img src="/assets/images/solar-install3.jpg" alt="Installation" class="solar-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

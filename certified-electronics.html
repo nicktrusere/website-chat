@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazardous Locations Services</title>
+    <style>
+        /* Hazardous Locations Specific Styles */
+        .hazardous-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .hazardous-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hazardous-subheading {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 50px;
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hazardous-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .hazardous-card {
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,107,107,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .hazardous-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .hazardous-card h3 {
+            color: #ff6b6b;
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px solid rgba(255,107,107,0.3);
+            padding-bottom: 10px;
+        }
+
+        .hazardous-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .hazardous-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .hazardous-list li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+            filter: hue-rotate(-20deg);
+        }
+
+        /* Warning Ribbon */
+        .warning-ribbon {
+            background: rgba(255,107,107,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        /* Existing styles remain the same */
+    </style>
+</head>
+<body>
+    <section class="hazardous-section">
+        <h1 class="hazardous-heading">Hazardous Locations Expertise</h1>
+        
+        <p class="hazardous-subheading">
+            Specialized electrical solutions for high-risk environments including gases, dust & petroleum installations. 
+            Comprehensive safety compliance and certification services.
+        </p>
+
+        <div class="warning-ribbon">
+            ⚠️ Certified HAZLOC Services | ATEX/IECEx Compliance | Zone 0/1/2 & Division 1/2 Classification
+        </div>
+
+        <div class="hazardous-grid">
+            <div class="hazardous-card">
+                <h3>Compliance & Certification</h3>
+                <ul class="hazardous-list">
+                    <li>HAZLOC Area Classification (Zone 0/1/2)</li>
+                    <li>Dust Ignition Protection (DI/DT)</li>
+                    <li>Petroleum & Gas Installations</li>
+                    <li>EX Certification Services</li>
+                    <li>ATEX/IECEx Compliance</li>
+                </ul>
+            </div>
+
+            <div class="hazardous-card">
+                <h3>Safety Services</h3>
+                <ul class="hazardous-list">
+                    <li>Risk Assessment Audits</li>
+                    <li>Explosion Protection Documentation</li>
+                    <li>Equipment Inspection & Testing</li>
+                    <li>Emergency System Verification</li>
+                    <li>Static Control Solutions</li>
+                </ul>
+            </div>
+
+            <div class="hazardous-card">
+                <h3>Specialized Installations</h3>
+                <ul class="hazardous-list">
+                    <li>Explosion-Proof Conduit Systems</li>
+                    <li>Intrinsically Safe Circuits</li>
+                    <li>Pressurized Enclosures</li>
+                    <li>Class I/II/III Division Solutions</li>
+                    <li>Gas Detection Systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-gallery">
+            <img src="/assets/images/hazloc1.jpg" alt="Explosion Proof Installation" class="gallery-image">
+            <img src="/assets/images/hazloc-inspection.jpg" alt="Safety Inspection" class="gallery-image">
+            <img src="/assets/images/gas-detection.jpg" alt="Gas Detection System" class="gallery-image">
+        </div>
+    </section>
+
+    <!-- Your Existing Industrial Section -->
+    <section class="industrial">
+        <!-- Your existing card grid here -->
+    </section>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Facility Installations</title>
+    <style>
+        /* Medical Section Styles */
+        .medical-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .medical-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00b4d8;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .medical-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .medical-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0,180,216,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .medical-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .medical-image-container {
+            position: relative;
+            height: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .medical-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .medical-card:hover .medical-image {
+            transform: scale(1.05);
+        }
+
+        .medical-card h3 {
+            color: #00b4d8;
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+        }
+
+        .medical-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .medical-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: rgba(18, 5, 192, 0.9);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .medical-list li:before {
+            content: "⚕️";
+            position: absolute;
+            left: 0;
+            filter: hue-rotate(-10deg);
+        }
+
+        /* Medical Gallery */
+        .medical-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .gallery-med-container {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 1.5/1;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-med-container:hover {
+            transform: scale(1.03);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .medical-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .medical-heading {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .medical-gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .medical-image-container {
+                height: 250px;
+            }
+            
+            .medical-heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .medical-card {
+                padding: 20px;
+            }
+            
+            .medical-image-container {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="medical-section">
+        <h1 class="medical-heading">Hospital & Medical Facility Solutions</h1>
+
+        <div class="medical-grid">
+            <!-- ICU -->
+            <div class="medical-card">
+                <div class="medical-image-container">
+                    <img src="/assets/images/icu-installation.jpg" alt="ICU Installation" class="medical-image">
+                </div>
+                <h3>Intensive Care Units</h3>
+                <ul class="medical-list">
+                    <li>Medical Grade Wiring Systems</li>
+                    <li>Emergency Power Backup</li>
+                    <li>Vital Equipment Circuits</li>
+                    <li>EMC/RFI Shielding</li>
+                </ul>
+            </div>
+
+            <!-- Operating Theaters -->
+            <div class="medical-card">
+                <div class="medical-image-container">
+                    <img src="/assets/images/operating-theater.jpg" alt="Operating Theater" class="medical-image">
+                </div>
+                <h3>Surgical Suites</h3>
+                <ul class="medical-list">
+                    <li>Laminar Flow Electricals</li>
+                    <li>Medical Gas System Integration</li>
+                    <li>Specialized Lighting Systems</li>
+                    <li>Isolated Power Panels</li>
+                </ul>
+            </div>
+
+            <!-- Delivery Rooms -->
+            <div class="medical-card">
+                <div class="medical-image-container">
+                    <img src="/assets/images/delivery-room.jpg" alt="Delivery Room" class="medical-image">
+                </div>
+                <h3>Birthing Suites</h3>
+                <ul class="medical-list">
+                    <li>Neonatal Electrical Systems</li>
+                    <li>Emergency Call Systems</li>
+                    <li>Climate Control Integration</li>
+                    <li>Patient Monitoring Circuits</li>
+                </ul>
+            </div>
+
+            <!-- Isolation Rooms -->
+            <div class="medical-card">
+                <div class="medical-image-container">
+                    <img src="/assets/images/isolation-room.jpg" alt="Isolation Room" class="medical-image">
+                </div>
+                <h3>Containment Facilities</h3>
+                <ul class="medical-list">
+                    <li>Negative Pressure Systems</li>
+                    <li>Biohazard Safety Electricals</li>
+                    <li>Decontamination Lighting</li>
+                    <li>Remote Monitoring Systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Medical Gallery -->
+        <div class="medical-gallery">
+            <div class="gallery-med-container">
+                <img src="/assets/images/med-install1.jpg" alt="Hospital Wiring" class="medical-image">
+            </div>
+            <div class="gallery-med-container">
+                <img src="/assets/images/med-install2.jpg" alt="Safety Systems" class="medical-image">
+            </div>
+            <div class="gallery-med-container">
+                <img src="/assets/images/med-install3.jpg" alt="Medical Lighting" class="medical-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

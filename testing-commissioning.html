@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Contracting Services</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: white;
+        }
+
+        /* Text Content Section */
+        .content-section {
+            max-width: 1400px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .service-heading {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: #fff;
+            text-align: center;
+        }
+
+        .service-subheading {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .feature-card h3 {
+            color: #4a90e2;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .feature-list li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        .gallery-image:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .service-heading {
+                font-size: 2.2rem;
+            }
+            
+            .service-subheading {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-image {
+                height: 300px;
+            }
+
+            .service-heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-image {
+                height: 200px;
+            }
+        }
+
+        /* Your Existing Industrial Section Styles */
+        .industrial { /* Your existing styles here */ }
+        .cards { /* Your existing styles here */ }
+        .card { /* Your existing styles here */ }
+        /* ... include all your existing CSS ... */
+    </style>
+</head>
+<body>
+    <section class="content-section">
+        <h1 class="service-heading">ELECTRICAL CONTRACTING & ENGINEERING SERVICES</h1>
+        
+        <p class="service-subheading">
+            Comprehensive electrical solutions for domestic, commercial, and industrial applications, 
+            ensuring compliance and optimal energy efficiency.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Core Services</h3>
+                <ul class="feature-list">
+                    <li>Electrical Installations & Maintenance</li>
+                    <li>Certificate of Compliance (C.O.C)</li>
+                    <li>New Building Wiring Solutions</li>
+                    <li>Turn-key Project Management</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Specialized Compliance</h3>
+                <ul class="feature-list">
+                    <li>GMR Compliance & Certification</li>
+                    <li>Factory & Plant Electrical Systems</li>
+                    <li>Power Generation Compliance</li>
+                    <li>Safety Regulation Adherence</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Advanced Solutions</h3>
+                <ul class="feature-list">
+                    <li>Power Analysis Services</li>
+                    <li>Energy Efficiency Optimization</li>
+                    <li>Engineering Consultation</li>
+                    <li>Custom Electrical Designs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-gallery">
+            <img src="/assets/images/installation1.jpg" alt="Industrial Installation" class="gallery-image">
+            <img src="/assets/images/compliance-check.jpg" alt="Safety Compliance" class="gallery-image">
+            <img src="/assets/images/energy-audit.jpg" alt="Energy Analysis" class="gallery-image">
+        </div>
+    </section>
+
+    <!-- Your Existing Industrial Section -->
+    <section class="industrial">
+        <!-- Your existing card grid here -->
+    </section>
+</body>
+</html>
